@@ -18,6 +18,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       StatusBar.styleDefault();
     }
   });
+  console.log("run app.js");
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
@@ -68,4 +69,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/playlists');
+
+  console.log("config app.js");
 });
